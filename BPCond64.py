@@ -119,6 +119,6 @@ offset = <<<offset>>>
 try:
     do_logic(virtual_call_addr, register_vtable, offset)
 except:
-    print "Error! at BP address:", hex(idc.GetRegValue("rip"))
+    print "Error! at BP address: 0x%08x",idc.GetRegValue("rip")
 
 #idc.add_cref(0x000000013FA72ABB, 0x000000013FA71177, idc.XREF_USER | idc.fl_F)
